@@ -4,6 +4,7 @@ import { config } from './config/config';
 const c = config.dev;
 
 //Configure AWS
+//NOTE: This requires for AWS CLI to be installed
 var credentials = new AWS.SharedIniFileCredentials({profile: 'default'});
 AWS.config.credentials = credentials;
 
